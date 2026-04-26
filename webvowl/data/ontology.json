@@ -1,0 +1,1328 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.uoc.edu/emdco" ],
+    "title" : {
+      "en" : "European Medical Device Risk Classification Ontology (EMDCO)"
+    },
+    "iri" : "http://www.uoc.edu/emdco",
+    "version" : "1.0",
+    "author" : [ "Roger Batlle Duran" ],
+    "description" : {
+      "en" : "Ontology for the classification and management of medical devices according to European regulations MDR (EU 2017/745) and IVDR (EU 2017/746). Enables semantic interoperability between manufacturers, regulatory authorities, hospitals and patients."
+    },
+    "labels" : {
+      "en" : "EMDCO - European Medical Device Risk Classification Ontology"
+    },
+    "comments" : {
+      "en" : "This ontology models medical devices, manufacturers, risk classifications, incidents and corrective actions (FSCA) according to EU MDR/IVDR regulations. Supports vigilance, post-market surveillance and interoperability with EUDAMED."
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2026-04-22",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Roger Batlle Duran",
+        "type" : "label"
+      } ],
+      "subject" : [ {
+        "identifier" : "subject",
+        "language" : "en",
+        "value" : "Medical Devices, MDR, IVDR, Risk Classification, EUDAMED, FSCA",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Universitat Oberta de Catalunya (UOC)",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "European Medical Device Risk Classification Ontology (EMDCO)",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://eudamed.ec.europa.eu",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.uoc.edu/emdco#Probability",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Probability",
+      "en" : "Probability"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/emdco#Low_Instance",
+      "baseIri" : "http://www.uoc.edu/emdco",
+      "comment" : {
+        "en" : "Low probability of occurrence (ISO 14971)."
+      },
+      "labels" : {
+        "IRI-based" : "Low_Instance",
+        "en" : "Low"
+      }
+    } ],
+    "comment" : {
+      "en" : "Probability level of a risk occurrence (ISO 14971)."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#RiskClass",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskClass",
+      "en" : "Risk Classification"
+    },
+    "subClasses" : [ "12", "13", "14", "15" ],
+    "comment" : {
+      "en" : "Regulatory risk classification for medical devices according to MDR Annex VIII (Classes I, IIa, IIb, III)."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#SeriousIncident",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "en" : "Serious Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/emdco#INC_001",
+      "baseIri" : "http://www.uoc.edu/emdco",
+      "comment" : {
+        "en" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant."
+      },
+      "labels" : {
+        "IRI-based" : "INC_001",
+        "en" : "Incident INC-001 (HeartMate 3 thrombosis)"
+      }
+    } ],
+    "comment" : {
+      "en" : "An incident that led or might have led to death or serious deterioration of health. Must be reported within 15 days."
+    },
+    "id" : "8",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#Severity",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Severity",
+      "en" : "Severity"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/emdco#Critical_Instance",
+      "baseIri" : "http://www.uoc.edu/emdco",
+      "comment" : {
+        "en" : "Critical severity - can cause death or serious permanent injury (ISO 14971)."
+      },
+      "labels" : {
+        "IRI-based" : "Critical_Instance",
+        "en" : "Critical"
+      }
+    } ],
+    "comment" : {
+      "en" : "Severity level of a risk (ISO 14971)."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#Country",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "en" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/emdco#Ireland",
+      "baseIri" : "http://www.uoc.edu/emdco",
+      "comment" : {
+        "en" : "Republic of Ireland - EU Member State."
+      },
+      "labels" : {
+        "IRI-based" : "Ireland",
+        "en" : "Ireland"
+      }
+    }, {
+      "iri" : "http://www.uoc.edu/emdco#Germany",
+      "baseIri" : "http://www.uoc.edu/emdco",
+      "comment" : {
+        "en" : "Federal Republic of Germany - EU Member State."
+      },
+      "labels" : {
+        "IRI-based" : "Germany",
+        "en" : "Germany"
+      }
+    } ],
+    "comment" : {
+      "en" : "A country where a manufacturer is based or where an incident is reported. Typically an EU Member State."
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#Device",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/Medical_device",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Medical Device"
+    },
+    "subClasses" : [ "19", "20", "21" ],
+    "comment" : {
+      "en" : "A medical device intended for diagnosis, treatment, monitoring or prevention of disease according to MDR Regulation (EU) 2017/745."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#NonSeriousIncident",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonSeriousIncident",
+      "en" : "Non-Serious Incident"
+    },
+    "comment" : {
+      "en" : "An incident that did not lead to serious consequences but must be reported for trending analysis."
+    },
+    "id" : "23",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#DeviceFailureRisk",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceFailureRisk",
+      "en" : "Device Failure Risk"
+    },
+    "comment" : {
+      "en" : "Risk related to failure of device components (electrical, mechanical, software, battery)."
+    },
+    "id" : "47",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#PassiveDevice",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PassiveDevice",
+      "en" : "Passive Medical Device"
+    },
+    "comment" : {
+      "en" : "A medical device that does not require a source of electrical energy or other power source (e.g., bandages, surgical instruments)."
+    },
+    "id" : "21",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#Risk",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "subClasses" : [ "47", "45", "33" ],
+    "comment" : {
+      "en" : "A potential hazard associated with the use of a medical device, classified according to IMDRF nomenclature."
+    },
+    "id" : "31"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#CorrectiveAction",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveAction",
+      "en" : "Field Safety Corrective Action (FSCA)"
+    },
+    "subClasses" : [ "28", "37", "35" ],
+    "comment" : {
+      "en" : "Any corrective action taken by the manufacturer for technical or medical reasons related to device characteristics (MDR Art. 2.68)."
+    },
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#ImplantableDevice",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "en" : "Implantable Medical Device"
+    },
+    "subClasses" : [ "25" ],
+    "comment" : {
+      "en" : "A medical device intended to be introduced wholly or partially into the human body through surgical intervention and to remain in place after the procedure."
+    },
+    "id" : "26",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#ExternalDevice",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExternalDevice",
+      "en" : "External Active Device"
+    },
+    "comment" : {
+      "en" : "An active medical device used externally to the body (e.g., infusion pump, external defibrillator)."
+    },
+    "id" : "70",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#SafetyAlert",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlert",
+      "en" : "Safety Alert"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/emdco#FSCA_001_SafetyAlert",
+      "baseIri" : "http://www.uoc.edu/emdco",
+      "comment" : {
+        "en" : "Safety alert issued to all implanting centres regarding anticoagulation protocol update."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA_001_SafetyAlert",
+        "en" : "FSCA-001 Safety Alert"
+      }
+    } ],
+    "comment" : {
+      "en" : "A field safety notice (FSN) issued to alert users about a device safety issue without requiring removal."
+    },
+    "id" : "35",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#Incident",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident"
+    },
+    "subClasses" : [ "23", "8" ],
+    "comment" : {
+      "en" : "An adverse event related to a medical device that is reportable under MDR/IVDR vigilance (Art. 87)."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#ClassIIa",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIIa",
+      "en" : "Risk Class IIa"
+    },
+    "comment" : {
+      "en" : "Low to medium risk. Requires Notified Body assessment (e.g., hearing aids, contact lenses)."
+    },
+    "id" : "12",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#MalfunctionRisk",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "en" : "Malfunction Risk"
+    },
+    "comment" : {
+      "en" : "Risk of device malfunction during operation (software errors, performance degradation)."
+    },
+    "id" : "45",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#IVDDevice",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDDevice",
+      "en" : "In Vitro Diagnostic Device"
+    },
+    "comment" : {
+      "en" : "A medical device used for the in vitro examination of specimens according to IVDR Regulation (EU) 2017/746."
+    },
+    "id" : "20",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#ClassIIb",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIIb",
+      "en" : "Risk Class IIb"
+    },
+    "comment" : {
+      "en" : "Medium to high risk. Requires Notified Body assessment (e.g., ventilators, surgical lasers, infusion pumps)."
+    },
+    "id" : "13",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#BiomaterialRisk",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BiomaterialRisk",
+      "en" : "Biomaterial Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/emdco#RSK_003_Thrombosis",
+      "baseIri" : "http://www.uoc.edu/emdco",
+      "comment" : {
+        "en" : "Blood clot formation within the device (IMDRF code: B0303)."
+      },
+      "labels" : {
+        "IRI-based" : "RSK_003_Thrombosis",
+        "en" : "Device Thrombosis"
+      }
+    } ],
+    "comment" : {
+      "en" : "Risk related to biomaterial interactions (thrombosis, infection, biocompatibility, allergic reactions)."
+    },
+    "id" : "33",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#FieldCorrection",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FieldCorrection",
+      "en" : "Field Correction"
+    },
+    "comment" : {
+      "en" : "Correction performed in the field without removing the device (e.g., software update, labeling change)."
+    },
+    "id" : "28",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#ClassIII",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassIII",
+      "en" : "Risk Class III"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/emdco#ClassIII_Instance",
+      "baseIri" : "http://www.uoc.edu/emdco",
+      "comment" : {
+        "en" : "Highest risk classification under MDR (EU 2017/745) Annex VIII."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIII_Instance",
+        "en" : "Class III - Highest Risk"
+      }
+    } ],
+    "comment" : {
+      "en" : "Highest risk class. Requires rigorous Notified Body assessment (e.g., heart valves, pacemakers, LVAD)."
+    },
+    "id" : "14",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#Manufacturer",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/Manufacturer",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/emdco#MAN_001_Medtronic",
+      "baseIri" : "http://www.uoc.edu/emdco",
+      "comment" : {
+        "en" : "Medtronic plc - Irish medical device multinational corporation."
+      },
+      "labels" : {
+        "IRI-based" : "MAN_001_Medtronic",
+        "en" : "Medtronic plc"
+      }
+    } ],
+    "comment" : {
+      "en" : "An entity that manufactures medical devices and is responsible for their design, production and marketing under MDR/IVDR regulations. Must be registered in EUDAMED with a SRN."
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#ActiveDevice",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "en" : "Active Medical Device"
+    },
+    "subClasses" : [ "26", "70" ],
+    "comment" : {
+      "en" : "A medical device that depends on a source of electrical energy or any source of power other than that directly generated by the human body or gravity."
+    },
+    "id" : "19",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#Recall",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall",
+      "en" : "Recall"
+    },
+    "comment" : {
+      "en" : "Removal of a device from the market due to safety concerns."
+    },
+    "id" : "37",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#ActiveImplant",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveImplant",
+      "en" : "Active Implantable Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.uoc.edu/emdco#DEV_001_HeartMate3",
+      "baseIri" : "http://www.uoc.edu/emdco",
+      "comment" : {
+        "en" : "Left Ventricular Assist Device for end-stage heart failure patients."
+      },
+      "labels" : {
+        "IRI-based" : "DEV_001_HeartMate3",
+        "en" : "HeartMate 3 LVAD"
+      }
+    } ],
+    "comment" : {
+      "en" : "An implantable device that requires a power source (e.g., pacemaker, LVAD, cochlear implant)."
+    },
+    "id" : "25",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#ClassI",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassI",
+      "en" : "Risk Class I"
+    },
+    "comment" : {
+      "en" : "Lowest risk class. Self-certification by the manufacturer is sufficient (e.g., bandages, wheelchairs)."
+    },
+    "id" : "15",
+    "superClasses" : [ "11" ]
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.uoc.edu/emdco#hasManufacturer",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "en" : "has manufacturer"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Relationship between a medical device and its manufacturer (responsible entity under MDR)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#patientAge",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "patientAge",
+      "en" : "patient age"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Age of the patient involved in the incident (in years)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "range" : "5",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#isImplantable",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isImplantable",
+      "en" : "is implantable"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Boolean indicating if the device is implantable in the human body."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#hasIncident",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasIncident",
+      "en" : "has incident"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "An incident reported for a specific device under post-market vigilance."
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "range" : "5",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#hasProbability",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasProbability",
+      "en" : "has probability"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Probability level of a risk."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "31",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "29",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "29",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#devicesAffected",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "devicesAffected",
+      "en" : "devices affected"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Number of devices affected by the corrective action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "range" : "2",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#incidentDescription",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "incidentDescription",
+      "en" : "incident description"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Detailed narrative description of the incident and its circumstances."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "41"
+  }, {
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "31",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "31",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#isActive",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "isActive",
+      "en" : "is active"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Boolean indicating if the device is active (requires power source)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#deviceName",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "deviceName",
+      "en" : "device name"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "The commercial name of the medical device as registered in EUDAMED."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#hasCorrectiveAction",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasCorrectiveAction",
+      "en" : "has corrective action"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Corrective actions (FSCA) taken in response to an incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#requiresImmediateAlert",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "requiresImmediateAlert",
+      "en" : "requires immediate alert"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Inferred by SWRL Rule 1: device with critical risk incidents requires immediate regulatory alert."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#hasRisk",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasRisk",
+      "en" : "has risk"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "The identified risk(s) associated with an incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "range" : "11",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#hasSeverity",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasSeverity",
+      "en" : "has severity"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Severity level of a risk."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#reportDate",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "reportDate",
+      "en" : "report date"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Date when the incident was reported to the competent authority (YYYY-MM-DD)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "range" : "11",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "2",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#eudamedSRN",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "eudamedSRN",
+      "en" : "EUDAMED SRN"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Single Registration Number assigned by EUDAMED (MDR Art. 31)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "62"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "11",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#hasRiskClass",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasRiskClass",
+      "en" : "has risk class"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Regulatory risk classification of the device according to MDR Annex VIII."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#requiresEnhancedSurveillance",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "requiresEnhancedSurveillance",
+      "en" : "requires enhanced surveillance"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Inferred by SWRL Rule 2: ClassIII devices with incidents require enhanced post-market surveillance."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#riskName",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "riskName",
+      "en" : "risk name"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Name of the identified risk according to IMDRF Adverse Event Terminology."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#manufacturerName",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "manufacturerName",
+      "en" : "manufacturer name"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The official legal name of the manufacturer as registered in EUDAMED."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#reportedInCountry",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "reportedInCountry",
+      "en" : "reported in country"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "The country where an incident was reported to competent authorities."
+    },
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#actionDate",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "actionDate",
+      "en" : "action date"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Date when the corrective action was initiated (YYYY-MM-DD)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#requiresEscalation",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "requiresEscalation",
+      "en" : "requires escalation"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Inferred by SWRL Rule 3: incidents with active safety alerts require escalation to vigilance committee."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#manufacturedIn",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "manufacturedIn",
+      "en" : "manufactured in"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The country where a manufacturer is headquartered."
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.uoc.edu/emdco#udiDI",
+    "baseIri" : "http://www.uoc.edu/emdco",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "udiDI",
+      "en" : "UDI-DI"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Unique Device Identifier - Device Identifier as required by MDR Art. 27."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "range" : "19",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "19",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  } ]
+}
