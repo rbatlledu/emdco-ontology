@@ -5,12 +5,8 @@
 <http://www.uoc.edu/emdco/1.0> a prov:Entity;
 	 dc:title "European Medical Device Risk Classification Ontology (EMDCO)";
 	 prov:wasAttributedTo :agent0;
-	 prov:wasAttributedTo :agent1;
-	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <http://www.uoc.edu/emdco#>;
 	 prov:wasGeneratedAt "2026-04-22";
 .
 :agent0 a prov:Agent; foaf:name "Roger Batlle Duran".
-:agent1 a prov:Agent; foaf:name "Roger Batlle Duran".
-:agent2 a prov:Agent; foaf:name "Roger Batlle Duran".
