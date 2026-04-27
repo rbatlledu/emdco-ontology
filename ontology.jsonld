@@ -1,279 +1,6 @@
 [ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Manufacturer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.uoc.edu/emdco#hasManufacturer"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "urn:swrl#inc"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#hasIncident"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Device"
-  } ]
-}, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#requiresImmediateAlert"
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "If a ClassIII device has any reported incident, it requires enhanced post-market surveillance."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Rule 2: Enhanced Surveillance for Class III"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid22"
-    }, {
-      "@id" : "_:genid20"
-    }, {
-      "@id" : "_:genid18"
-    } ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid24"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "urn:swrl#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#hasIncident"
-  } ]
-}, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.uoc.edu/emdco#RiskClass"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.uoc.edu/emdco#hasRiskClass"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid20",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.uoc.edu/emdco#ClassIII_Instance"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#hasRiskClass"
-  } ]
-}, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Device"
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#requiresEnhancedSurveillance"
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "If an incident has an associated SafetyAlert, it requires escalation to the vigilance committee."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Rule 3: Escalation for Safety Alerts"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid31"
-    }, {
-      "@id" : "_:genid29"
-    }, {
-      "@id" : "_:genid27"
-    } ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid33"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid27",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#fsca"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#SafetyAlert"
-  } ]
-}, {
-  "@id" : "_:genid29",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "urn:swrl#fsca"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#hasCorrectiveAction"
-  } ]
-}, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Risk"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.uoc.edu/emdco#hasRisk"
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Incident"
-  } ]
-}, {
-  "@id" : "_:genid33",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#requiresEscalation"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Country"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.uoc.edu/emdco#manufacturedIn"
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "If a device has an incident associated with a critical-severity risk, the device requires immediate regulatory alert."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Rule 1: Immediate Alert for Critical Risks"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid13"
-    }, {
-      "@id" : "_:genid11"
-    }, {
-      "@id" : "_:genid9"
-    }, {
-      "@id" : "_:genid7"
-    } ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid15"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#r"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Critical_Instance"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#hasSeverity"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl#inc"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "urn:swrl#r"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.uoc.edu/emdco#hasRisk"
-  } ]
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://dbpedia.org/resource/Germany",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -285,12 +12,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "http://www.uoc.edu/emdco#Ireland"
-  } ]
-}, {
-  "@id" : "http://dbpedia.org/resource/Medical_device",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Device"
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Medtronic",
@@ -308,7 +29,13 @@
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/subject",
@@ -317,8 +44,68 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/schemaVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.uoc.edu/emdco",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Roger Batlle Duran"
   } ],
@@ -329,8 +116,14 @@
     "@language" : "en",
     "@value" : "Ontology for the classification and management of medical devices according to European regulations MDR (EU 2017/745) and IVDR (EU 2017/746). Enables semantic interoperability between manufacturers, regulatory authorities, hospitals and patients."
   } ],
+  "http://purl.org/dc/elements/1.1/language" : [ {
+    "@value" : "en"
+  } ],
   "http://purl.org/dc/elements/1.1/publisher" : [ {
     "@value" : "Universitat Oberta de Catalunya (UOC)"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@value" : "Creative Commons Attribution 4.0 International (CC BY 4.0)"
   } ],
   "http://purl.org/dc/elements/1.1/subject" : [ {
     "@language" : "en",
@@ -340,9 +133,72 @@
     "@language" : "en",
     "@value" : "European Medical Device Risk Classification Ontology (EMDCO)"
   } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Batlle Duran, R. (2026). European Medical Device Risk Classification Ontology (EMDCO) v1.0. Universitat Oberta de Catalunya."
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-22"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Roger Batlle Duran"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for the classification and management of medical devices according to European regulations MDR (EU 2017/745) and IVDR (EU 2017/746). Enables semantic interoperability between manufacturers, regulatory authorities, hospitals and patients."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-27"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "en"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-27"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Universitat Oberta de Catalunya (UOC)"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  } ],
+  "http://purl.org/dc/terms/subject" : [ {
+    "@language" : "en",
+    "@value" : "Medical Devices, MDR, IVDR, Risk Classification, EUDAMED, FSCA"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "European Medical Device Risk Classification Ontology (EMDCO)"
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@value" : "http://purl.org/ontology/bibo/status/published"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "emdco"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://www.uoc.edu/emdco#"
+  } ],
+  "http://schema.org/creator" : [ {
+    "@value" : "Roger Batlle Duran"
+  } ],
+  "http://schema.org/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://schema.org/publisher" : [ {
+    "@value" : "Universitat Oberta de Catalunya (UOC)"
+  } ],
+  "http://schema.org/schemaVersion" : [ {
+    "@value" : "1.0"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "This ontology models medical devices, manufacturers, risk classifications, incidents and corrective actions (FSCA) according to EU MDR/IVDR regulations. Supports vigilance, post-market surveillance and interoperability with EUDAMED."
+    "@value" : "This ontology models medical devices, manufacturers, risk classifications, incidents and corrective actions (FSCA) according to EU MDR/IVDR regulations."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -350,6 +206,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://eudamed.ec.europa.eu"
+  }, {
+    "@id" : "https://www.imdrf.org/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.uoc.edu/emdco/1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "1.0"
@@ -359,7 +220,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A medical device that depends on a source of electrical energy or any source of power other than that directly generated by the human body or gravity."
+    "@value" : "A medical device that depends on a source of electrical energy or any source of power."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -373,7 +234,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An implantable device that requires a power source (e.g., pacemaker, LVAD, cochlear implant)."
+    "@value" : "An implantable device that requires a power source (e.g., pacemaker, LVAD)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -387,7 +248,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Risk related to biomaterial interactions (thrombosis, infection, biocompatibility, allergic reactions)."
+    "@value" : "Risk related to biomaterial interactions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -401,7 +262,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Lowest risk class. Self-certification by the manufacturer is sufficient (e.g., bandages, wheelchairs)."
+    "@value" : "Lowest risk class. Self-certification by the manufacturer is sufficient."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -415,7 +276,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Highest risk class. Requires rigorous Notified Body assessment (e.g., heart valves, pacemakers, LVAD)."
+    "@value" : "Highest risk class. Requires rigorous Notified Body assessment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -443,7 +304,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Low to medium risk. Requires Notified Body assessment (e.g., hearing aids, contact lenses)."
+    "@value" : "Low to medium risk. Requires Notified Body assessment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -457,7 +318,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Medium to high risk. Requires Notified Body assessment (e.g., ventilators, surgical lasers, infusion pumps)."
+    "@value" : "Medium to high risk. Requires Notified Body assessment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -471,18 +332,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Any corrective action taken by the manufacturer for technical or medical reasons related to device characteristics (MDR Art. 2.68)."
+    "@value" : "Any corrective action taken by the manufacturer for technical or medical reasons."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Field Safety Corrective Action (FSCA)"
+    "@value" : "Field Safety Corrective Action"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/emdco#Country",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A country where a manufacturer is based or where an incident is reported. Typically an EU Member State."
+    "@value" : "A country where a manufacturer is based or where an incident is reported."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -496,7 +357,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Critical severity - can cause death or serious permanent injury (ISO 14971)."
+    "@value" : "Critical severity - can cause death or serious permanent injury."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -505,29 +366,6 @@
 }, {
   "@id" : "http://www.uoc.edu/emdco#DEV_001_HeartMate3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.uoc.edu/emdco#deviceName" : [ {
-    "@value" : "HeartMate 3 LVAD"
-  } ],
-  "http://www.uoc.edu/emdco#hasIncident" : [ {
-    "@id" : "http://www.uoc.edu/emdco#INC_001"
-  } ],
-  "http://www.uoc.edu/emdco#hasManufacturer" : [ {
-    "@id" : "http://www.uoc.edu/emdco#MAN_001_Medtronic"
-  } ],
-  "http://www.uoc.edu/emdco#hasRiskClass" : [ {
-    "@id" : "http://www.uoc.edu/emdco#ClassIII_Instance"
-  } ],
-  "http://www.uoc.edu/emdco#isActive" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.uoc.edu/emdco#isImplantable" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.uoc.edu/emdco#udiDI" : [ {
-    "@value" : "(01)00380740009095"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/emdco#ActiveImplant"
   } ],
@@ -541,7 +379,7 @@
   } ]
 }, {
   "@id" : "http://www.uoc.edu/emdco#Device",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A medical device intended for diagnosis, treatment, monitoring or prevention of disease according to MDR Regulation (EU) 2017/745."
@@ -552,18 +390,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "http://dbpedia.org/resource/Medical_device"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid1"
-  }, {
-    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/emdco#DeviceFailureRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Risk related to failure of device components (electrical, mechanical, software, battery)."
+    "@value" : "Risk related to failure of device components."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -577,7 +410,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An active medical device used externally to the body (e.g., infusion pump, external defibrillator)."
+    "@value" : "An active medical device used externally to the body."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -589,14 +422,6 @@
 }, {
   "@id" : "http://www.uoc.edu/emdco#FSCA_001_SafetyAlert",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.uoc.edu/emdco#actionDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-02-01"
-  } ],
-  "http://www.uoc.edu/emdco#devicesAffected" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "850"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/emdco#SafetyAlert"
   } ],
@@ -613,7 +438,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Correction performed in the field without removing the device (e.g., software update, labeling change)."
+    "@value" : "Correction performed in the field without removing the device."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -639,26 +464,6 @@
 }, {
   "@id" : "http://www.uoc.edu/emdco#INC_001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.uoc.edu/emdco#hasCorrectiveAction" : [ {
-    "@id" : "http://www.uoc.edu/emdco#FSCA_001_SafetyAlert"
-  } ],
-  "http://www.uoc.edu/emdco#hasRisk" : [ {
-    "@id" : "http://www.uoc.edu/emdco#RSK_003_Thrombosis"
-  } ],
-  "http://www.uoc.edu/emdco#incidentDescription" : [ {
-    "@value" : "Patient with HeartMate 3 LVAD developed ischemic stroke. Device thrombus confirmed by echocardiography."
-  } ],
-  "http://www.uoc.edu/emdco#patientAge" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "58"
-  } ],
-  "http://www.uoc.edu/emdco#reportDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-01-15"
-  } ],
-  "http://www.uoc.edu/emdco#reportedInCountry" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Germany"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/emdco#SeriousIncident"
   } ],
@@ -689,7 +494,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A medical device intended to be introduced wholly or partially into the human body through surgical intervention and to remain in place after the procedure."
+    "@value" : "A medical device intended to be introduced wholly or partially into the human body through surgical intervention."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -703,14 +508,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An adverse event related to a medical device that is reportable under MDR/IVDR vigilance (Art. 87)."
+    "@value" : "An adverse event related to a medical device that is reportable under MDR/IVDR vigilance."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Incident"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid3"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/emdco#Ireland",
@@ -734,7 +536,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Low probability of occurrence (ISO 14971)."
+    "@value" : "Low probability of occurrence."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -743,15 +545,6 @@
 }, {
   "@id" : "http://www.uoc.edu/emdco#MAN_001_Medtronic",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.uoc.edu/emdco#eudamedSRN" : [ {
-    "@value" : "SRN-IE-MED-0001"
-  } ],
-  "http://www.uoc.edu/emdco#manufacturedIn" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Ireland"
-  } ],
-  "http://www.uoc.edu/emdco#manufacturerName" : [ {
-    "@value" : "Medtronic plc"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/emdco#Manufacturer"
   } ],
@@ -768,7 +561,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Risk of device malfunction during operation (software errors, performance degradation)."
+    "@value" : "Risk of device malfunction during operation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -782,24 +575,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An entity that manufactures medical devices and is responsible for their design, production and marketing under MDR/IVDR regulations. Must be registered in EUDAMED with a SRN."
+    "@value" : "An entity that manufactures medical devices and is responsible for their design, production and marketing under MDR/IVDR regulations."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Manufacturer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "http://dbpedia.org/resource/Manufacturer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "http://www.uoc.edu/emdco#NonSeriousIncident",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An incident that did not lead to serious consequences but must be reported for trending analysis."
+    "@value" : "An incident that did not lead to serious consequences but must be reported."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -813,7 +600,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A medical device that does not require a source of electrical energy or other power source (e.g., bandages, surgical instruments)."
+    "@value" : "A medical device that does not require a source of electrical energy."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -836,15 +623,6 @@
 }, {
   "@id" : "http://www.uoc.edu/emdco#RSK_003_Thrombosis",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.uoc.edu/emdco#hasProbability" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Low_Instance"
-  } ],
-  "http://www.uoc.edu/emdco#hasSeverity" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Critical_Instance"
-  } ],
-  "http://www.uoc.edu/emdco#riskName" : [ {
-    "@value" : "Device Thrombosis"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.uoc.edu/emdco#BiomaterialRisk"
   } ],
@@ -875,7 +653,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A potential hazard associated with the use of a medical device, classified according to IMDRF nomenclature."
+    "@value" : "A potential hazard associated with the use of a medical device."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -886,7 +664,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Regulatory risk classification for medical devices according to MDR Annex VIII (Classes I, IIa, IIb, III)."
+    "@value" : "Regulatory risk classification for medical devices according to MDR Annex VIII."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -897,7 +675,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A field safety notice (FSN) issued to alert users about a device safety issue without requiring removal."
+    "@value" : "A field safety notice issued to alert users about a device safety issue."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -911,7 +689,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An incident that led or might have led to death or serious deterioration of health. Must be reported within 15 days."
+    "@value" : "An incident that led or might have led to death or serious deterioration of health."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -936,7 +714,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Date when the corrective action was initiated (YYYY-MM-DD)."
+    "@value" : "Date when the corrective action was initiated."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#CorrectiveAction"
@@ -953,7 +731,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The commercial name of the medical device as registered in EUDAMED."
+    "@value" : "The commercial name of the medical device."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Device"
@@ -987,7 +765,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Single Registration Number assigned by EUDAMED (MDR Art. 31)."
+    "@value" : "Single Registration Number assigned by EUDAMED."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Manufacturer"
@@ -1004,7 +782,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Corrective actions (FSCA) taken in response to an incident."
+    "@value" : "Corrective actions taken in response to an incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Incident"
@@ -1021,7 +799,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An incident reported for a specific device under post-market vigilance."
+    "@value" : "An incident reported for a specific device."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Device"
@@ -1038,7 +816,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Relationship between a medical device and its manufacturer (responsible entity under MDR)."
+    "@value" : "Relationship between a medical device and its manufacturer."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Device"
@@ -1072,7 +850,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The identified risk(s) associated with an incident."
+    "@value" : "The identified risk associated with an incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Incident"
@@ -1123,7 +901,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Detailed narrative description of the incident and its circumstances."
+    "@value" : "Detailed description of the incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Incident"
@@ -1140,7 +918,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Boolean indicating if the device is active (requires power source)."
+    "@value" : "Boolean indicating if the device is active."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Device"
@@ -1157,7 +935,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Boolean indicating if the device is implantable in the human body."
+    "@value" : "Boolean indicating if the device is implantable."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Device"
@@ -1191,7 +969,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The official legal name of the manufacturer as registered in EUDAMED."
+    "@value" : "The official legal name of the manufacturer."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Manufacturer"
@@ -1208,7 +986,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Age of the patient involved in the incident (in years)."
+    "@value" : "Age of the patient involved in the incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Incident"
@@ -1225,7 +1003,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Date when the incident was reported to the competent authority (YYYY-MM-DD)."
+    "@value" : "Date when the incident was reported."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Incident"
@@ -1242,7 +1020,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The country where an incident was reported to competent authorities."
+    "@value" : "The country where an incident was reported."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Incident"
@@ -1255,62 +1033,11 @@
     "@id" : "http://www.uoc.edu/emdco#Country"
   } ]
 }, {
-  "@id" : "http://www.uoc.edu/emdco#requiresEnhancedSurveillance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Inferred by SWRL Rule 2: ClassIII devices with incidents require enhanced post-market surveillance."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Device"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "requires enhanced surveillance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
-  "@id" : "http://www.uoc.edu/emdco#requiresEscalation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Inferred by SWRL Rule 3: incidents with active safety alerts require escalation to vigilance committee."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Incident"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "requires escalation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
-  "@id" : "http://www.uoc.edu/emdco#requiresImmediateAlert",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Inferred by SWRL Rule 1: device with critical risk incidents requires immediate regulatory alert."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.uoc.edu/emdco#Device"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "requires immediate alert"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
   "@id" : "http://www.uoc.edu/emdco#riskName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Name of the identified risk according to IMDRF Adverse Event Terminology."
+    "@value" : "Name of the identified risk."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Risk"
@@ -1327,7 +1054,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Unique Device Identifier - Device Identifier as required by MDR Art. 27."
+    "@value" : "Unique Device Identifier as required by MDR Art. 27."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.uoc.edu/emdco#Device"
@@ -1342,19 +1069,4 @@
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "urn:swrl#d",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
-}, {
-  "@id" : "urn:swrl#fsca",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
-}, {
-  "@id" : "urn:swrl#i",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
-}, {
-  "@id" : "urn:swrl#inc",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
-}, {
-  "@id" : "urn:swrl#r",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 } ]
